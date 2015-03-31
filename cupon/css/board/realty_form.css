@@ -1,0 +1,163 @@
+.title-ads{
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+.title-ads h1{
+    padding-left: 40px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 2px solid #8cc53f;
+    background: url("../../images/add-company.png") no-repeat;
+}
+#realty-form label{
+    text-transform: uppercase;
+    color: #414042;
+    font-weight: normal;
+    display: inline-block;
+}
+#realty-form select{
+    border: 1px solid #B8C1C1;
+    border-radius: 5px;
+    margin-right: 50px;
+    padding: 5px;
+    box-shadow: 2px 3px 4px #DDDDDD inset;
+}
+#realty-form input{
+    border: 1px solid #B8C1C1;
+    border-radius: 4px;
+    margin-right: 5px;
+    padding: 5px;
+    box-shadow: 2px 3px 4px #DDDDDD inset;
+}
+#realty-form .row{
+    overflow: hidden;
+}
+#realty-form h3{
+    border-bottom: 2px solid #8cc53f;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 40px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+#Realty_title{
+    border: 1px solid #B8C1C1;
+    border-radius: 4px;
+    float: left;
+    margin-right: 50px;
+    padding: 5px;
+    width: 235px;
+    box-shadow: 2px 3px 4px #DDDDDD inset;
+}
+.title label{
+    float: left;
+    padding-top: 8px;
+    margin-right: 10px;
+}
+#Realty_price{
+    border: 1px solid #B8C1C1;
+    border-radius: 4px;
+    margin-right: 5px;
+    padding: 5px;
+    box-shadow: 2px 3px 4px #DDDDDD inset;
+}
+#Realty_details{
+    border: 1px solid #B8C1C1;
+    border-radius: 4px;
+    margin-right: 5px;
+    padding: 5px;
+    float: left;
+    width: 670px;
+    margin-right: 50px;
+    box-shadow: 2px 3px 4px #DDDDDD inset;
+}
+#Realty_phone{
+    width: 150px;
+}
+.counter{
+    display: inline-block;
+    float: left;
+    padding-top: 8px;
+}
+.inline{
+    display: inline !important;
+}
+#messages img{
+    max-width: 150px;
+}
+.loading{
+    background: url("../../images/ajax-loader.gif") no-repeat center center !important;
+}
+.count-foto{
+    color: #8CC53F;
+    float: right;
+    font-size: 0.9em;
+    font-weight: normal;
+    background: url("../../images/camera.png") no-repeat;
+    padding-left: 20px;
+}
+.foto-grey{
+    color: #bbb;
+}
+.limit{
+    margin-top: -10px;
+    font-size: 0.8em;
+    color: #bbbbbb;
+    text-align: right;
+}
+.start{
+    background: none repeat scroll 0 0 #5BA136 !important;
+    border-radius: 6px !important;
+    border: none;
+    color: #FFFFFF;
+    display: block;
+    font-weight: 700;
+    margin: 0 auto 30px 210px;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+    width: 250px;
+    box-shadow: 2px 3px 8px #abe088 inset !important;
+    float: right;
+    text-shadow: 1px 1px 1px #006838;
+}
+.pre-view{
+    background: none repeat scroll 0 0 #dedede !important;
+    border-radius: 6px !important;
+    border: none;
+    color: #444444;
+    display: block;
+    font-weight: 700;
+    margin: 0 auto 30px 210px;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+    width: 250px;
+    box-shadow: 2px 3px 8px #ffffff inset !important;
+    float: left;
+    text-shadow: 1px 1px 1px #fff;
+}
+.buttons{
+    padding-top: 15px;
+    border-top: 1px solid #d0d2d3;
+}
+.title{
+    display: none;
+}
+.apartment{
+    float: left;
+}
+.area{
+    float: left;
+    margin-left: 20px;
+}
+.select-city{
+    float: left;
+    margin-left: 20px;
+}
+.price-row{
+    float: left;
+}

@@ -1,0 +1,30 @@
+.countdown_row {
+    float:left;
+    position: relative;
+}
+
+.countdown_section {
+    float:left;
+    position: relative;
+    color: #444444;
+    text-align: center;
+    padding: 0 5px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.countdown_amount {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    height:20px;
+    line-height: 24px;
+    float:left;
+    padding: 5px 5px;
+    color: red;
+    text-align: center;
+}
+
+.time_label {
+    display: block;
+}

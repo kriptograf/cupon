@@ -1,0 +1,137 @@
+@charset 'UTF-8';
+/*
+ * jQuery File Upload UI Plugin CSS 6.3
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2010, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+  float: right;
+  margin-right: 4px;
+  height: 110px;
+    width: 150px;
+    border: 1px solid #6ab638;
+    background: url('../../../../../images/add-company.png') no-repeat center center;
+text-align: center;
+}
+.lbl-txt{
+    color: #6ab638;
+    display: block;
+    margin-top: 75px;
+}
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  border: solid transparent;
+  border-width: 0 0 100px 200px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -moz-transform: translate(-300px, 0) scale(4);
+  direction: ltr;
+  cursor: pointer;
+    height: 150px;
+}
+.fileupload-buttonbar{
+    float: right;
+}
+.table-striped{
+    float: right;
+    margin-top: 5px;
+}
+li.template-download{
+    display: inline-block;
+    float: right;
+    margin-right: 9px;
+    min-height: 110px;
+}
+li.template-download:hover img{
+    opacity: 0.3;
+    transition: opacity 0.3s ease-in-out 0s;
+}
+.preview{
+    width: 150px;
+    overflow: hidden;
+}
+span.delete{
+    display: inline-block;
+}
+
+span.del-button:hover{
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out 0s;
+}
+.btn-danger{
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: url("../../../../../images/admin/delete.png"), pointer;
+}
+.btn-danger img{
+    height: 110px;
+}
+.btn-danger img:hover{
+    opacity: 0.6;
+}
+
+.fileupload-buttonbar .btn,
+.fileupload-buttonbar .toggle {
+  margin-bottom: 5px;
+}
+.files .progress {
+  width: 200px;
+}
+.progress-animated .bar {
+  background: url(../img/progressbar.gif) !important;
+  filter: none;
+}
+.fileupload-loading {
+  position: absolute;
+  left: 50%;
+  width: 128px;
+  height: 128px;
+  background: url(../img/loading.gif) center no-repeat;
+  display: none;
+}
+.fileupload-processing .fileupload-loading {
+  display: block;
+}
+
+/* Fix for IE 6: */
+*html .fileinput-button {
+  line-height: 22px;
+  margin: 1px -3px 0 0;
+}
+
+/* Fix for IE 7: */
+*+html .fileinput-button {
+  margin: 1px 0 0 0;
+}
+
+@media (max-width: 480px) {
+  .files .btn span {
+    display: none;
+  }
+  .files .preview * {
+    width: 40px;
+  }
+  .files .name * {
+    width: 80px;
+    display: inline-block;
+    word-wrap: break-word;
+  }
+  .files .progress {
+    width: 20px;
+  }
+  .files .delete {
+    width: 60px;
+  }
+}
