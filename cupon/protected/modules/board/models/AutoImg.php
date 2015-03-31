@@ -1,0 +1,100 @@
+<?php
+
+/**
+ * This is the model class for table "auto_img".
+ *
+ * The followings are the available columns in table 'auto_img':
+ * @property integer $id
+ * @property integer $ads_id
+ * @property string $img
+ * @property string $thumb
+ * @property integer $status
+ *
+ * The followings are the available model relations:
+ * @property Auto $ads
+ */
+class AutoImg extends CActiveRecord
+{
+	/**
+	 * Returns the static model of the specified AR class.
+	 * @param string $className active record class name.
+	 * @return AutoImg the static model class
+	 */
+	public static function model($className=__CLASS__)
+	{
+		return parent::model($className);
+	}
+
+	/**
+	 * @return string the associated database table name
+	 */
+	public function tableName()
+	{
+		return 'auto_img';
+	}
+
+	/**
+	 * @return array validation rules for model attributes.
+	 */
+	public function rules()
+	{
+		// NOTE: you should only define rules for those attributes that
+		// will receive user inputs.
+		return array(
+			array('ads_id, img, thumb', 'required'),
+			array('ads_id, status', 'numerical', 'integerOnly'=>true),
+			array('img, thumb', 'length', 'max'=>255),
+			// The following rule is used by search().
+			// Please remove those attributes that should not be searched.
+			array('id, ads_id, img, thumb, status', 'safe', 'on'=>'search'),
+		);
+	}
+
+	/**
+	 * @return array relational rules.
+	 */
+	public function relations()
+	{
+		// NOTE: you may need to adjust the relation name and the related
+		// class name for the relations automatically generated below.
+		return array(
+			'ads' => array(self::BELONGS_TO, 'Auto', 'ads_id'),
+		);
+	}
+
+	/**
+	 * @return array customized attribute labels (name=>label)
+	 */
+	public function attributeLabels()
+	{
+		return array(
+			'id' => 'ID',
+			'ads_id' => 'Ads',
+			'img' => 'Img',
+			'thumb' => 'Thumb',
+			'status' => 'Status',
+		);
+	}
+
+	/**
+	 * Retrieves a list of models based on the current search/filter conditions.
+	 * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
+	 */
+	public function search()
+	{
+		// Warning: Please modify the following code to remove attributes that
+		// should not be searched.
+
+		$criteria=new CDbCriteria;
+
+		$criteria->compare('id',$this->id);
+		$criteria->compare('ads_id',$this->ads_id);
+		$criteria->compare('img',$this->img,true);
+		$criteria->compare('thumb',$this->thumb,true);
+		$criteria->compare('status',$this->status);
+
+		return new CActiveDataProvider($this, array(
+			'criteria'=>$criteria,
+		));
+	}
+}
