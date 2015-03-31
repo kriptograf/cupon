@@ -1,0 +1,72 @@
+/**
+ * custom CSS styles for CLinkPager.
+ *
+ * designed by foreach aka Moskvin Vitaliy
+ */
+
+ul.yiiPager
+{
+	font-size:11px;
+	border:0;
+	margin:0;
+	padding:0;
+	line-height:100%;
+	display:inline;
+}
+
+ul.yiiPager li
+{
+	display:inline;
+}
+ul.yiiPager li.page{
+    background: none !important;
+}
+ul.yiiPager a:link,
+ul.yiiPager a:visited
+{
+	font-weight:bold;
+	color:#0e509e;
+	padding:2px 6px;
+	text-decoration:none;
+}
+
+ul.yiiPager .page a
+{
+	font-weight:normal;
+}
+
+ul.yiiPager li.page a:hover{
+    background:#6ab638;
+    border-radius: 4px;
+    color:#FFFFFF;
+    font-weight:bold;
+}
+
+ul.yiiPager .selected a
+{
+	background:#6ab638;
+    border-radius: 4px;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+
+ul.yiiPager .hidden a
+{
+	color:#888888;
+}
+ul.yiiPager .hidden a img{
+    height: 14px;
+    margin-bottom: -2px;
+}
+ul.yiiPager a img{
+    height: 14px;
+    margin-bottom: -2px;
+}
+/**
+ * Hide first and last buttons by default.
+ */
+ul.yiiPager .first,
+ul.yiiPager .last
+{
+	display:none;
+}

@@ -1,0 +1,56 @@
+.comment{
+	padding:12px;
+	width:750px;
+	position:relative;
+	background-color:#fcfcfc;
+	border:1px solid white;
+	color:#888;
+	margin-bottom:25px;
+	
+	/* CSS3 rounded corners and drop shadows */
+	
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+
+	-moz-box-shadow:2px 2px 0 #c2c2c2;
+	-webkit-box-shadow:2px 2px 0 #c2c2c2;
+	box-shadow:2px 2px 0 #c2c2c2;
+}
+
+.comment .avatar{
+	height:50px;
+	position:absolute;
+	width:50px;
+	background:url('../images/default_avatar.gif') no-repeat #fcfcfc;
+	-moz-box-shadow:1px 1px 0 #c2c2c2;
+	-webkit-box-shadow:1px 1px 0 #c2c2c2;
+	box-shadow:1px 1px 0 #c2c2c2;
+}
+
+.comment .avatar img{
+	display:block;
+}
+
+.comment .name{
+	font-size:20px;
+	padding-bottom:10px;
+	color:#ccc;
+    margin-left: 60px;
+}
+
+.comment .date{
+	font-size:10px;
+	padding:6px 0;
+	position:absolute;
+	right:15px;
+	top:10px;
+	color:#bbb;
+}
+
+.comment p{
+	font-size:18px;
+	line-height:1.5;
+	overflow-x:hidden;
+    text-indent: 60px;
+}

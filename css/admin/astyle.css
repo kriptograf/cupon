@@ -1,0 +1,688 @@
+body {
+    background: #1e1e1e;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Trebuchet MS"
+}
+
+.shadow {
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    background: url(../img/shadow.png) repeat-x;
+    z-index: -1;
+    top: 56px
+}
+
+#header {
+    height: 56px;
+    background: url(../img/h-bg.gif);
+    border-bottom: 1px solid #505063
+}
+
+#header .logo {
+    float: left;
+    text-align: center;
+    width: 240px;
+    padding-left: 20px
+}
+
+#header .logo a {
+    color: #fff;
+    font-family: "Trebuchet MS", Arial, Helvetica;
+    font-style: italic;
+    font-size: 28px;
+    line-height: 56px;
+    text-decoration: none
+}
+
+#header .user {
+    float: right;
+    font-size: 11px;
+    color: #bcc1c9;
+    padding: 28px 20px 0 0
+}
+
+#header .user span {
+    color: #fff;
+    margin-right: 20px
+}
+
+#header .user a {
+    color: #bcc1c9;
+    text-decoration: none
+}
+
+#header .user a:hover {
+    text-decoration: underline
+}
+
+#slidebar {
+    position: absolute;
+    top: 77px;
+    left: 20px;
+    width: 240px;
+    border-top: 1px solid #353540;
+    border-bottom: 1px solid #353540
+}
+
+#menu .menu-item h3 {
+    background: #181c23;
+    height: 38px;
+    line-height: 38px;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 20px;
+    cursor: pointer;
+    border-left: 1px solid #353540;
+    border-right: 1px solid #353540
+}
+
+#menu .menu-item h3 img {
+    margin: 0 10px -3px 0
+}
+
+#menu .menu-item .menu-overflow {
+    overflow: hidden
+}
+
+#menu .menu-content {
+    border-left: 1px solid #353540;
+    border-right: 1px solid #353540
+}
+
+#menu .menu-content ul li a {
+    padding-left: 20px;
+    display: block;
+    color: #273343;
+    line-height: 38px;
+    font-size: 12px;
+    text-decoration: none;
+    background: #f9f9f9;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #d5d6d7
+}
+
+#menu .menu-content ul li a img {
+    margin: 0 10px -2px 0
+}
+
+#menu .menu-content ul li a:hover {
+    background: #f0f0f0
+}
+
+#content {
+    position: absolute;
+    left: 280px;
+    right: 20px;
+    margin-top: 20px
+}
+
+#content .box-in {
+    border: 1px solid #3e3e3e;
+    background: #fff
+}
+
+#content .box-head {
+    height: 52px;
+    background: url(../img/ht-bg.gif);
+    border-bottom: #3e3e3e
+}
+
+#content .box-content:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+#content .box-head h1 {
+    display: block;
+    line-height: 52px;
+    color: #fff;
+    font-size: 16px;
+    padding-left: 20px;
+    font-weight: 700
+}
+
+#content .box-content hr {
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid #D8D9DA;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+#content .box-content .text h1 {
+    color: #2B2B2B;
+    font-size: 24px;
+    padding: 10px
+}
+
+#content .box-content .text h2 {
+    color: #2B2B2B;
+    font-size: 22px;
+    padding: 10px
+}
+
+#content .box-content .text h3 {
+    color: #2B2B2B;
+    font-size: 20px;
+    padding: 10px
+}
+
+#content .box-content .text h4 {
+    color: #2B2B2B;
+    font-size: 18px;
+    padding: 10px
+}
+
+#content .box-content .text h5 {
+    color: #2B2B2B;
+    font-size: 16px;
+    padding: 10px
+}
+
+#content .box-content .text h6 {
+    color: #2B2B2B;
+    font-size: 14px;
+    padding: 10px
+}
+
+#content .box-content .text ul {
+    margin-left: 20px;
+    line-height: 18px;
+    font-size: 11px;
+    color: #6a727f;
+    list-style-type: disc;
+    padding: 0 10px
+}
+
+#content .box-content .text ol {
+    margin-left: 20px;
+    line-height: 18px;
+    font-size: 11px;
+    color: #6a727f;
+    list-style-type: decimal;
+    padding: 0 10px
+}
+
+#content .box-content .text p {
+    color: #6a727f;
+    line-height: 18px;
+    font-size: 12px;
+    padding: 10px
+}
+
+#content .box-content .text p a {
+    color: #3f8bbc
+}
+
+#content .box-content .text p a:hover {
+    text-decoration: none
+}
+
+#content .box-content .table {
+    width: 100%;
+    padding: 10px 0
+}
+
+#content .box-content .table table thead {
+    border-top: 1px solid #ccc;
+    height: 38px;
+    line-height: 38px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 700
+}
+
+#content .box-content .table table thead td {
+    border-top: 1px solid #dddedf;
+    border-bottom: 1px solid #dddedf
+}
+
+#content .box-content .table table thead td div {
+    display: block;
+    background: url(../img/th-bg.gif) repeat-x;
+    border-right: solid 1px #888f9a;
+    margin: 1px 0;
+    padding: 0 20px
+}
+
+#content .box-content .table table .checkbox {
+    width: 61px
+}
+
+#content .box-content .table table .checkbox div {
+    padding: 0 20px
+}
+
+#content .box-content .table table tbody td {
+    border-bottom: 1px solid #dddedf
+}
+
+#content .box-content .table table tbody td tr {
+    height: 40px
+}
+
+#content .box-content .table table tbody td div {
+    border-right: solid 1px #d5d6d7;
+    line-height: 38px;
+    font-size: 12px;
+    color: #2b2b2b;
+    font-weight: 700;
+    margin: 1px 0;
+    padding: 0 20px
+}
+
+#content .box-content .table table tbody td .odd {
+    background: #eee
+}
+
+#content .box-content .table table tbody td div a {
+    color: #3f8bbc;
+    text-decoration: none
+}
+
+#content .box-content .actions {
+    float: left;
+    overflow: hidden;
+    padding: 20px 0 10px
+}
+
+#content .box-content .actions .applyfield {
+    border: 1px solid #e0e0e0;
+    font-size: 12px;
+    color: #2b2b2b;
+    padding: 6px 9px
+}
+
+#content .box-content .actions .apply {
+    background: #000 url(../img/s-bg.gif) repeat-x;
+    border: 1px solid #050505;
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 6px 9px
+}
+
+#content .box-content .gallery .menu {
+    border-right: 1px solid #D8D9DA;
+    width: 195px;
+    padding-right: 10px;
+    float: left
+}
+
+#content .box-content .gallery .menu ul li a {
+    display: block;
+    line-height: 38px;
+    background: url(../img/g-bg.gif) repeat-x scroll 0 0 #4290BF;
+    border: 1px solid #3F8BBC;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px;
+    padding: 0 20px
+}
+
+#content .box-content .gallery .images {
+    float: left;
+    padding: 10px 10px 0
+}
+
+#content .box-content .gallery .images ul li {
+    float: left;
+    height: 130px;
+    padding: 0 10px 0 0
+}
+
+#content .box-content .gallery .images ul li p {
+    text-align: center;
+    font-size: 10px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-weight: 700
+}
+
+#content .box-content .gallery .images ul li p a {
+    color: #3F8BBC;
+    text-decoration: none
+}
+
+#content .box-content .gallery .images ul li img {
+    border: 1px solid #dddedf;
+    padding: 1px
+}
+
+.show_preview {
+    position: absolute;
+    width: 372px;
+    height: 249px;
+    background: #fff;
+    margin: 2px
+}
+
+#content .box-content .pagination {
+    float: right;
+    overflow: hidden;
+    padding: 20px 0 10px
+}
+
+#content .box-content .pagination a {
+    border: 1px solid #d5d6d7;
+    font-size: 12px;
+    color: #2b2b2b;
+    text-decoration: none;
+    text-align: center;
+    background: #fff url(../img/p-bg.gif) repeat-x;
+    padding: 6px 9px
+}
+
+#content .box-content .pagination .gap {
+    vertical-align: 3px
+}
+
+#content .box-content .form p {
+    font-size: 14px;
+    color: #2b2b2b;
+    margin-bottom: 10px
+}
+
+#content .box-content .form label {
+    display: block;
+    font-size: 14px;
+    color: #2b2b2b;
+    font-weight: 700;
+    line-height: 30px
+}
+
+#content .box-content .form .text {
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #2b2b2b;
+    padding: 10px
+}
+
+#content .box-content .form .file {
+    font-size: 14px;
+    margin-bottom: 10px
+}
+
+#content .box-content .form .small {
+    width: 25%
+}
+
+#content .box-content .form .medium {
+    width: 50%
+}
+
+#content .box-content .form .scrollbox {
+    background: #FFF;
+    border: 1px solid #D8D9DA;
+    height: 120px;
+    overflow: scroll;
+    color: #2B2B2B;
+    font-size: 12px;
+    font-weight: 700;
+    width: 50%;
+    margin-bottom: 10px
+}
+
+#content .box-content .form .scrollbox div input {
+    width: inherit;
+    margin: 0 10px 0 0;
+    padding: 0
+}
+
+#content .box-content .form .scrollbox div.odd {
+    background: #f9f9f9
+}
+
+#content .box-content .form .submit {
+    background: #000 url(../img/s-bg.gif) repeat-x;
+    border: 1px solid #050505;
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    height: 38px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0 20px
+}
+
+#login {
+    width: 400px;
+    z-index: 9999;
+    position: relative;
+    margin: 100px auto 0
+}
+
+#login .box-in {
+    border: 1px solid #3e3e3e;
+    background: #fff;
+    padding: 20px
+}
+
+#login .logo {
+    text-align: center;
+    padding-bottom: 20px
+}
+
+#login .logo a {
+    color: #fff;
+    font-family: "Trebuchet MS", Arial, Helvetica;
+    font-style: italic;
+    font-size: 38px;
+    text-decoration: none
+}
+
+#login label {
+    font-size: 14px;
+    color: #2b2b2b;
+    font-weight: 700;
+    line-height: 36px;
+    display: block
+}
+
+#login .text {
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #2b2b2b;
+    width: 316px;
+    padding: 10px
+}
+
+#login .checkbox {
+    float: left;
+    margin: 11px 10px
+}
+
+#login .submit {
+    background: #000 url(../img/s-bg.gif) repeat-x;
+    border: 1px solid #050505;
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    height: 38px;
+    text-transform: uppercase;
+    cursor: pointer;
+    float: left;
+    padding: 0 20px
+}
+
+#login .remember-me {
+    display: inline;
+    float: left
+}
+
+#login .forget-password {
+    color: #bcc1c9;
+    text-decoration: none;
+    padding-left: 5px;
+    font-size: 12px
+}
+
+#login .forget-password:hover {
+    color: #2facee
+}
+
+.shadow-login {
+    height: 80px;
+    width: 100%;
+    background: url(../img/shadow.png) repeat-x
+}
+
+.notification {
+    margin-bottom: 10px;
+    position: relative
+}
+
+.notification .messages {
+    color: #C58F75;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    margin: 1px;
+    padding: 13px 0 13px 12px
+}
+.errorSummary li{
+    font-style: italic;
+    font-weight: normal;
+}
+.notification .messages .close {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer
+}
+
+input.error {
+    border: 1px solid #c58f75
+}
+
+.error .messages {
+    background: #f2bba0;
+}
+
+.success {
+    border: 1px solid #9ac933
+}
+
+.success .messages {
+    background: #cee790 url(../img/icon/success.png) no-repeat 20px 9px
+}
+
+.warning {
+    border: 1px solid #e6d260
+}
+
+.warning .messages {
+    background: #f9edaa url(../img/icon/warning.png) no-repeat 20px 9px
+}
+
+.info {
+    border: 1px solid #acdbef
+}
+
+.info .messages {
+    background: #daeffb;
+}
+
+.tipsy {
+    margin-top: 10px;
+    font-size: 12px;
+    background: url(../img/ttarrow.png) no-repeat;
+    padding: 5px
+}
+
+.tipsy-inner {
+    background: #181C23;
+    color: #bcc1c9;
+    max-width: 200px;
+    text-align: center;
+    padding: 10px 20px
+}
+
+.tipsy-north {
+    background-position: top center
+}
+
+.tipsy-south {
+    background-position: bottom center
+}
+
+.tipsy-east {
+    background-position: right center
+}
+
+.tipsy-west {
+    background-position: left center
+}
+
+#container, #content .box-content .table table {
+    width: 100%
+}
+
+#menu .menu-content ul, #content .box-content .gallery .menu ul, #content .box-content .gallery .images ul {
+    list-style-type: none
+}
+
+#content .box-out, #login .box-out {
+    border: 1px solid #353540;
+    margin-bottom: 20px;
+    background: url(../img/alpha.png);
+    padding: 10px
+}
+
+#content .box-content, #content .box-content .form, #content .box-content .form .scrollbox div, #content .box-content .chart {
+    padding: 10px
+}
+
+#content .box-content .table table thead .action, #content .box-content .table table .action div {
+    border-right: 0
+}
+
+#content .box-content .table table tbody td .even, #content .box-content .form .scrollbox div.even {
+    background: #fff
+}
+
+#content .box-content .table table tbody td div a:hover, #content .box-content .gallery .images ul li p a:hover {
+    color: #2facee;
+    text-decoration: underline
+}
+
+#content .box-content .actions .submit:hover, #content .box-content .form .submit:hover, #login .submit:hover {
+    background: #4290bf url(../img/sh-bg.gif) repeat-x;
+    border: 1px solid #3F8BBC
+}
+
+#content .box-content .gallery .menu ul li a:hover, #content .box-content .gallery .menu ul li .select {
+    background: #4290bf url(../img/gh-bg.gif) repeat-x;
+    border: 1px solid #050505
+}
+
+#content .box-content .pagination a:hover, #content .box-content .pagination .select {
+    background: #4290bf url(../img/ph-bg.gif) repeat-x;
+    border: 1px solid #3f8bbc;
+    color: #fff
+}
+
+#content .box-content .form .textarea, #content .box-content .form .big {
+    width: 98%
+}
+
+#content .box-content .form .text:focus, #login .text:focus {
+    border: 1px solid #000;
+    color: #000
+}
